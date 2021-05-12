@@ -13,6 +13,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<flow-ref doc:name="Flow Reference" doc:id="937d6bbb-d392-490f-bc9b-6b72ce51a91b" name="Sub_Flow"/>
 		<set-payload value='#["response from main flow"]' doc:name="Set Payload" doc:id="d5cf500d-c483-4080-b27c-8acd178e76f6" mimeType="application/json"/>
 		<logger level="INFO" doc:name="Logger" doc:id="341eb3d6-8945-43f4-a266-21b39d025736" message="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="f8d4cc7c-1d7d-4530-a0e9-31c3ea284d0d" message="hi"/>
 	</flow>
 	<flow name="PrivateFlow" doc:id="113e85be-1c2c-47b1-ac58-340a530ebc70" >
 		<set-payload value='#["response from private flow"]' doc:name="Set Payload" doc:id="e380ad89-8637-4b87-9e82-e59928e9f7a3" mimeType="application/json"/>
